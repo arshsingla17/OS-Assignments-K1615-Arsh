@@ -68,4 +68,19 @@ int main()
 	
 	// FINDING WAITING TIME AND TURN AROUNd TIME
 	
+	for(i=0;i<n;++i)
+	{	
+	t=t+remaining_time[i];
+	tt[i]=t-arrival_time[i];
+	waiting_time[i]=tt[i]-burst_time[i];
+	wait_time+=waiting_time[i];
+	turnaround_time+=tt[i];
+	}
+	
+	
+	//PRINTING AVERAGE TURNAROUND TIME AND WAITING TIME
+	
+	
+	printf("\nAverage Waiting Time= %f\n",wait_time*1.0/n); 
+  	printf("Avg Turnaround Time = %f",turnaround_time*1.0/n);
 }
