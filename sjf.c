@@ -86,6 +86,16 @@ tsum=tsum+tt[i];
 }
  
 tavg=(tsum/n);
-
+ 
+printf("************************");
+printf("\n RESULT:-");
+printf("\nProcess\t Burst\t Arrival\t Waiting\t Turn-around" );
+for(i=0;i<n;i++)
+{
+printf("\n p%d\t %d\t %d\t\t %d\t\t\t%d",p[i],at[i],bt[i],wt[i],tt[i]);
+}
+ 
+printf("\n\nAVERAGE WAITING TIME : %f",wavg);
+printf("\nAVERAGE TURN AROUND TIME : %f",tavg);
 return 0;
 }
