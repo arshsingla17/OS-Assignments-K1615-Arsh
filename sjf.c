@@ -1,4 +1,5 @@
 #include<stdio.h>
+//Author : Arsh Singla
 int main()
 {
 int i,n,p[10],min,k=1,btime=0;
